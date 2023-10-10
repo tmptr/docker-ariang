@@ -1,3 +1,4 @@
+name: Build/release docker images
 on:
   push:
     paths-ignore:
