@@ -4,7 +4,7 @@ on:
   workflow_dispatch: #github页面手动触发
   push:
     tags:
-      - "v*.*"
+      - "v1.0"
 env:
   IMAGE_NAME: docker-ariang
 jobs:
