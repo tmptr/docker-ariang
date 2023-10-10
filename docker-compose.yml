@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  book-searcher:
+  docker-ariang:
     image: ghcr.io/tmptr/docker-ariang:master
     restart: always
     ports:
