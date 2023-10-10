@@ -6,7 +6,7 @@ on:
     tags:
       - "v*.*"
 env:
-  IMAGE_NAME: docker-ariang
+  IMAGE_NAME: ghcr.io/${{ github.event.repository.full_name }}
 jobs:
   get-tags:
     runs-on: ubuntu-latest
