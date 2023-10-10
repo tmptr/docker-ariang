@@ -4,7 +4,7 @@ on:
   workflow_dispatch: #github页面手动触发
   push:
     tags:
-      - "v1.0"
+      - "v*.*"
 env:
   IMAGE_NAME: docker-ariang
 jobs:
@@ -44,5 +44,5 @@ jobs:
           push: true
           tags: |
             ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ needs.get-tags.outputs.tags }}
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest            
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
 
