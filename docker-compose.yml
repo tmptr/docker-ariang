@@ -2,7 +2,7 @@ version: '3'
 
 services:
   docker-ariang:
-    image: ghcr.io/tmptr/docker-ariang:master
+    image: ghcr.io/tmptr/docker-ariang:latest
     restart: always
     ports:
       - "6883:80"
